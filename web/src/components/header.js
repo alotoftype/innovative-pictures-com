@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import CTALink from "./CTALink";
+import logo from "../images/ipLogo.svg";
 
 const Header = ({ showNav, siteTitle, scrolled, navMenuItems = [], textWhite = true }) => {
   let headerClass = "fixed w-full z-30 top-0 text-white";
@@ -25,7 +26,7 @@ const Header = ({ showNav, siteTitle, scrolled, navMenuItems = [], textWhite = t
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <Link id="siteTitle" className={titleClass} to="/">
-            {siteTitle}
+            <img src={logo} alt="Innovative Pictures Logo" width="110px"/>
           </Link>
         </div>
 
